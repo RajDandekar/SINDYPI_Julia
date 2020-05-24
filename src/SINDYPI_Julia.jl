@@ -1,9 +1,13 @@
 module SINDYPI_Julia
 
-greet() = print("Hello World!")
+include("SINDYPI_main.jl")
+include("Basis_generation.jl")
+include("SparsityAlgorithm.jl")
+include("Table_generation.jl")
 
-include("Basis_new.jl")
-
-export basis_new
+export  SINDYPI
+export Basis_SINDY_PI
+export Sparse_matrix_SINDYPI
+export Table_SINDY_PI
 
 end # module
